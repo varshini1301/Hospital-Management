@@ -1,0 +1,134 @@
+Patient_menu As screen:
+    Fill: =RGBA(242, 239, 223, 1)
+    LoadingSpinnerColor: =RGBA(30, 14, 91, 1)
+
+    Container4 As groupContainer.manualLayoutContainer:
+        DropShadow: =DropShadow.Light
+        Height: =146
+        RadiusBottomLeft: =4
+        RadiusBottomRight: =4
+        RadiusTopLeft: =4
+        RadiusTopRight: =4
+        Width: =1366
+        ZIndex: =1
+
+        Rectangle7 As rectangle:
+            BorderColor: =RGBA(92, 74, 168, 1)
+            Fill: =RGBA(30, 14, 91, 1)
+            Height: =146
+            Width: =1366
+            ZIndex: =1
+
+        Label7 As label:
+            Align: =Align.Center
+            BorderColor: =RGBA(92, 74, 168, 1)
+            Color: =RGBA(255, 255, 255, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            FontWeight: =FontWeight.Bold
+            Height: =80
+            Size: =38
+            Text: ="kavery Hospital"
+            Width: =480
+            X: =443
+            Y: =33
+            ZIndex: =2
+
+        Icon10 As icon.BackArrow:
+            BorderColor: =RGBA(92, 74, 168, 1)
+            Color: =RGBA(255, 255, 255, 1)
+            DisabledBorderColor: =RGBA(166, 166, 166, 1)
+            DisabledColor: =RGBA(244, 244, 244, 1)
+            Height: =80
+            Icon: =Icon.BackArrow
+            OnSelect: =Navigate(Home_page);
+            Width: =120
+            X: =28
+            Y: =33
+            ZIndex: =3
+
+    Rectangle8 As rectangle:
+        BorderColor: =RGBA(92, 74, 168, 1)
+        Fill: =RGBA(102, 182, 227, 1)
+        Height: =124
+        Width: =1366
+        Y: =146
+        ZIndex: =2
+
+    Label8 As label:
+        Align: =Align.Center
+        BorderColor: =RGBA(92, 74, 168, 1)
+        Color: =RGBA(0, 0, 0, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        FontWeight: =FontWeight.Bold
+        Height: =56
+        Size: =25
+        Text: ="If it's your first visit,Please Register"
+        Width: =660
+        X: =353
+        Y: =180
+        ZIndex: =3
+
+    Button1 As button:
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Fill: =RGBA(0, 121, 187, 1)
+        FontWeight: =FontWeight.Bold
+        Height: =110
+        HoverColor: =RGBA(255, 255, 255, 1)
+        HoverFill: =Color.DarkCyan
+        OnSelect: =Navigate(Pateint_Register);
+        RadiusBottomLeft: =0
+        RadiusBottomRight: =0
+        RadiusTopLeft: =0
+        RadiusTopRight: =0
+        Size: =22
+        Text: ="Patient Register"
+        Width: =324
+        X: =508
+        Y: =318
+        ZIndex: =4
+
+    Button5 As button:
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Fill: =RGBA(0, 121, 187, 1)
+        FontWeight: =FontWeight.Bold
+        Height: =112
+        HoverColor: =RGBA(255, 255, 255, 1)
+        HoverFill: =Color.DarkCyan
+        OnSelect: =Navigate(Book_appointment);
+        RadiusBottomLeft: =0
+        RadiusBottomRight: =0
+        RadiusTopLeft: =0
+        RadiusTopRight: =0
+        Size: =22
+        Text: ="Book Appointment"
+        Width: =324
+        X: =508
+        Y: =470
+        ZIndex: =5
+
+    Rectangle9 As rectangle:
+        BorderColor: =RGBA(92, 74, 168, 1)
+        Fill: =RGBA(102, 182, 227, 1)
+        Height: =128
+        Width: =1366
+        Y: =640
+        ZIndex: =6
+
+    Label12 As label:
+        Align: =Align.Center
+        BorderColor: =RGBA(92, 74, 168, 1)
+        Color: =RGBA(0, 0, 0, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        FontWeight: =FontWeight.Bold
+        Height: =48
+        Size: =25
+        Text: ="If Already registered,Book consultation"
+        Width: =708
+        X: =342
+        Y: =680
+        ZIndex: =7
+

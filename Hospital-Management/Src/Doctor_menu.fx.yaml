@@ -1,0 +1,204 @@
+Doctor_menu As screen:
+    Fill: =RGBA(242, 239, 223, 1)
+    LoadingSpinnerColor: =RGBA(30, 14, 91, 1)
+
+    Container5 As groupContainer.manualLayoutContainer:
+        DropShadow: =DropShadow.Light
+        Height: =140
+        RadiusBottomLeft: =4
+        RadiusBottomRight: =4
+        RadiusTopLeft: =4
+        RadiusTopRight: =4
+        Width: =1366
+        ZIndex: =1
+
+        Rectangle10 As rectangle:
+            BorderColor: =RGBA(92, 74, 168, 1)
+            Fill: =RGBA(30, 14, 91, 1)
+            Height: =140
+            Width: =1366
+            ZIndex: =1
+
+        Label13 As label:
+            Align: =Align.Center
+            BorderColor: =RGBA(92, 74, 168, 1)
+            Color: =RGBA(255, 255, 255, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            FontWeight: =FontWeight.Bold
+            Height: =90
+            Size: =38
+            Text: ="Kavery Hospital"
+            Width: =472
+            X: =462
+            Y: =25
+            ZIndex: =2
+
+        Icon11 As icon.BackArrow:
+            BorderColor: =RGBA(92, 74, 168, 1)
+            Color: =RGBA(255, 255, 255, 1)
+            DisabledBorderColor: =RGBA(166, 166, 166, 1)
+            DisabledColor: =RGBA(244, 244, 244, 1)
+            Height: =89
+            Icon: =Icon.BackArrow
+            OnSelect: =Navigate(Home_page);
+            Width: =106
+            X: =56
+            Y: =25
+            ZIndex: =3
+
+    Rectangle11 As rectangle:
+        BorderColor: =RGBA(92, 74, 168, 1)
+        Fill: =RGBA(102, 182, 227, 1)
+        Height: =122
+        Width: =1366
+        Y: =140
+        ZIndex: =2
+
+    Label14 As label:
+        Align: =Align.Center
+        BorderColor: =RGBA(92, 74, 168, 1)
+        Color: =RGBA(0, 0, 0, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        FontWeight: =FontWeight.Bold
+        Height: =62
+        Size: =30
+        Text: ="Receptionist"
+        Width: =310
+        X: =544
+        Y: =170
+        ZIndex: =3
+
+    Button6 As button:
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Fill: =RGBA(0, 121, 187, 1)
+        FontWeight: =FontWeight.Bold
+        Height: =100
+        HoverColor: =RGBA(255, 255, 255, 1)
+        HoverFill: =Color.DarkCyan
+        OnSelect: =Navigate(Direct_appointment);
+        RadiusBottomLeft: =0
+        RadiusBottomRight: =0
+        RadiusTopLeft: =0
+        RadiusTopRight: =0
+        Size: =22
+        Text: ="Direct Appointment"
+        Width: =364
+        X: =315
+        Y: =296
+        ZIndex: =4
+
+    Button7 As button:
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Fill: =RGBA(0, 121, 187, 1)
+        FontWeight: =FontWeight.Bold
+        Height: =100
+        HoverColor: =RGBA(255, 255, 255, 1)
+        HoverFill: =Color.DarkCyan
+        OnSelect: =Navigate(Patient_history)
+        RadiusBottomLeft: =0
+        RadiusBottomRight: =0
+        RadiusTopLeft: =0
+        RadiusTopRight: =0
+        Size: =22
+        Text: ="Patient history"
+        Width: =332
+        X: =750
+        Y: =296
+        ZIndex: =5
+
+    Rectangle12 As rectangle:
+        BorderColor: =RGBA(92, 74, 168, 1)
+        Fill: =RGBA(30, 14, 91, 1)
+        Height: =62
+        Width: =1366
+        Y: =448
+        ZIndex: =6
+
+    Button8 As button:
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Fill: =RGBA(0, 121, 187, 1)
+        FontWeight: =FontWeight.Bold
+        Height: =104
+        HoverColor: =RGBA(255, 255, 255, 1)
+        HoverFill: |
+            =Color.DarkCyan
+        OnSelect: =Navigate(My_consultation);
+        RadiusBottomLeft: =0
+        RadiusBottomRight: =0
+        RadiusTopLeft: =0
+        RadiusTopRight: =0
+        Size: =22
+        Text: ="My Consultation"
+        Width: =364
+        X: =315
+        Y: =570
+        ZIndex: =7
+
+    Button9 As button:
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Fill: =RGBA(0, 121, 187, 1)
+        FontWeight: =FontWeight.Bold
+        Height: =104
+        HoverColor: =RGBA(255, 255, 255, 1)
+        HoverFill: |
+            =Color.DarkCyan
+        OnSelect: =Navigate(My_patients);
+        RadiusBottomLeft: =0
+        RadiusBottomRight: =0
+        RadiusTopLeft: =0
+        RadiusTopRight: =0
+        Size: =22
+        Text: ="My Patients"
+        Width: =332
+        X: =750
+        Y: =570
+        ZIndex: =8
+
+    Rectangle13 As rectangle:
+        BorderColor: =RGBA(92, 74, 168, 1)
+        Fill: =RGBA(30, 14, 91, 1)
+        Height: =32
+        Width: =1366
+        Y: =736
+        ZIndex: =9
+
+    Rectangle14 As rectangle:
+        BorderColor: =RGBA(92, 74, 168, 1)
+        Fill: =RGBA(30, 14, 91, 1)
+        Height: =259
+        Width: =28
+        Y: =489
+        ZIndex: =10
+
+    Rectangle15 As rectangle:
+        BorderColor: =RGBA(92, 74, 168, 1)
+        Fill: =RGBA(30, 14, 91, 1)
+        Height: =247
+        Width: =32
+        X: =1334
+        Y: =489
+        ZIndex: =11
+
+    Rectangle16 As rectangle:
+        BorderColor: =RGBA(92, 74, 168, 1)
+        Fill: =RGBA(30, 14, 91, 1)
+        Height: =448
+        Width: =28
+        ZIndex: =12
+
+    Rectangle17 As rectangle:
+        BorderColor: =RGBA(92, 74, 168, 1)
+        Fill: =RGBA(30, 14, 91, 1)
+        Height: =467
+        Width: =32
+        X: =1334
+        ZIndex: =13
+

@@ -1,0 +1,197 @@
+Home_page As screen:
+    Fill: =RGBA(242, 239, 223, 1)
+    LoadingSpinnerColor: =RGBA(30, 14, 91, 1)
+
+    Container1 As groupContainer.manualLayoutContainer:
+        DropShadow: =DropShadow.Light
+        Height: =160
+        RadiusBottomLeft: =4
+        RadiusBottomRight: =4
+        RadiusTopLeft: =4
+        RadiusTopRight: =4
+        Width: =1366
+        ZIndex: =1
+
+        Rectangle1 As rectangle:
+            BorderColor: =RGBA(92, 74, 168, 1)
+            Fill: =RGBA(30, 14, 91, 1)
+            Height: =160
+            Width: =1366
+            ZIndex: =1
+
+    Label1 As label:
+        Align: =Align.Center
+        BorderColor: =RGBA(92, 74, 168, 1)
+        Color: =RGBA(255, 255, 255, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        FontWeight: =FontWeight.Bold
+        Height: =94
+        Size: =38
+        Text: ="Kavery Hospital"
+        Width: =488
+        X: =470
+        Y: =33
+        ZIndex: =2
+
+    Image1 As image:
+        BorderColor: =RGBA(92, 74, 168, 1)
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Height: =288
+        Image: ='867-8678512_doctor-icon-physician'
+        Width: =332
+        X: =309
+        Y: =219
+        ZIndex: =3
+
+    Image2 As image:
+        BorderColor: =RGBA(92, 74, 168, 1)
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Height: =288
+        Image: ='th (3)'
+        Width: =332
+        X: =735
+        Y: =219
+        ZIndex: =4
+
+    Rectangle2 As rectangle:
+        BorderColor: =RGBA(92, 74, 168, 1)
+        Fill: =RGBA(30, 14, 91, 1)
+        Height: =528
+        Width: =88
+        Y: =160
+        ZIndex: =5
+
+    Rectangle3 As rectangle:
+        BorderColor: =RGBA(92, 74, 168, 1)
+        Fill: =RGBA(30, 14, 91, 1)
+        Width: =1366
+        Y: =668
+        ZIndex: =6
+
+    Rectangle4 As rectangle:
+        BorderColor: =RGBA(92, 74, 168, 1)
+        Fill: =RGBA(30, 14, 91, 1)
+        Height: =528
+        Width: =86
+        X: =1280
+        Y: =160
+        ZIndex: =7
+
+    Label2 As label:
+        Align: =Align.Center
+        BorderColor: =RGBA(92, 74, 168, 1)
+        Color: =RGBA(0, 0, 0, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        FontWeight: =FontWeight.Bold
+        Size: =20
+        Text: ="Doctor Register"
+        Width: =218
+        X: =336
+        Y: =526
+        ZIndex: =8
+
+    Label3 As label:
+        Align: =Align.Center
+        BorderColor: =RGBA(92, 74, 168, 1)
+        Color: =RGBA(0, 0, 0, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        FontWeight: =FontWeight.Bold
+        Height: =42
+        Size: =20
+        Text: ="Doctor Login"
+        Width: =204
+        X: =336
+        Y: =580
+        ZIndex: =9
+
+    Icon2 As icon.NextArrow:
+        BorderColor: =RGBA(92, 74, 168, 1)
+        Color: =RGBA(0, 134, 208, 1)
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(244, 244, 244, 1)
+        Height: =42
+        Icon: =Icon.NextArrow
+        OnSelect: =Navigate(Doctor_Login);
+        Width: =44
+        X: =564
+        Y: =580
+        ZIndex: =11
+
+    Label4 As label:
+        Align: =Align.Center
+        BorderColor: =RGBA(92, 74, 168, 1)
+        Color: =RGBA(0, 0, 0, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        FontWeight: =FontWeight.Bold
+        Size: =20
+        Text: ="Patient Register"
+        Width: =238
+        X: =764
+        Y: =526
+        ZIndex: =12
+
+    Label5 As label:
+        Align: =Align.Center
+        BorderColor: =RGBA(92, 74, 168, 1)
+        Color: =RGBA(0, 0, 0, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        FontWeight: =FontWeight.Bold
+        Height: =42
+        Size: =20
+        Text: ="Patient Login"
+        Width: =218
+        X: =764
+        Y: =580
+        ZIndex: =13
+
+    Icon3 As icon.NextArrow:
+        BorderColor: =RGBA(92, 74, 168, 1)
+        Color: =RGBA(0, 134, 208, 1)
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(244, 244, 244, 1)
+        Height: =50
+        Icon: =Icon.NextArrow
+        OnSelect: =Navigate(Pateint_Register);
+        Width: =44
+        X: =1002
+        Y: =516
+        ZIndex: =14
+
+    Icon4 As icon.NextArrow:
+        BorderColor: =RGBA(92, 74, 168, 1)
+        Color: =RGBA(0, 134, 208, 1)
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(244, 244, 244, 1)
+        Height: =42
+        Icon: =Icon.NextArrow
+        OnSelect: =Navigate(Patient_login);
+        X: =992
+        Y: =580
+        ZIndex: =15
+
+    Icon12 As icon.NextArrow:
+        BorderColor: =RGBA(92, 74, 168, 1)
+        Color: =RGBA(0, 134, 208, 1)
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(244, 244, 244, 1)
+        Height: =42
+        Icon: =Icon.NextArrow
+        OnSelect: =Navigate(Doctor_Register);
+        Width: =44
+        X: =564
+        Y: =526
+        ZIndex: =16
+
+    Image3 As image:
+        BorderColor: =RGBA(92, 74, 168, 1)
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Height: =94
+        Image: =th
+        Width: =164
+        X: =356
+        Y: =33
+        ZIndex: =17
+

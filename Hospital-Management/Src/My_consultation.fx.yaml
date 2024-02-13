@@ -1,0 +1,293 @@
+My_consultation As screen:
+    Fill: =RGBA(242, 239, 223, 1)
+    LoadingSpinnerColor: =RGBA(30, 14, 91, 1)
+
+    Container18 As groupContainer.manualLayoutContainer:
+        DropShadow: =DropShadow.Light
+        Height: =148
+        RadiusBottomLeft: =4
+        RadiusBottomRight: =4
+        RadiusTopLeft: =4
+        RadiusTopRight: =4
+        Width: =1366
+        ZIndex: =1
+
+        Rectangle31 As rectangle:
+            BorderColor: =RGBA(92, 74, 168, 1)
+            Fill: =RGBA(30, 14, 91, 1)
+            Height: =148
+            Width: =1366
+            ZIndex: =1
+
+        Label35 As label:
+            Align: =Align.Center
+            BorderColor: =RGBA(92, 74, 168, 1)
+            Color: =RGBA(255, 255, 255, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            FontWeight: =FontWeight.Bold
+            Height: =72
+            Size: =38
+            Text: ="My Consultation"
+            Width: =502
+            X: =450
+            Y: =38
+            ZIndex: =2
+
+        Icon29 As icon.BackArrow:
+            BorderColor: =RGBA(92, 74, 168, 1)
+            Color: =RGBA(255, 255, 255, 1)
+            DisabledBorderColor: =RGBA(166, 166, 166, 1)
+            DisabledColor: =RGBA(244, 244, 244, 1)
+            Height: =86
+            Icon: =Icon.BackArrow
+            OnSelect: =Navigate(Doctor_menu);
+            Width: =114
+            X: =32
+            Y: =31
+            ZIndex: =3
+
+    "Gallery2 As gallery.'BrowseLayout_Vertical_OneTextVariant_ver5.0'":
+        BorderColor: =RGBA(92, 74, 168, 1)
+        DelayItemLoading: =true
+        Height: =414
+        Items: |+
+            =Filter('Appointment details',StartsWith(Name,TextInput3.Text))
+            
+        Layout: =Layout.Vertical
+        LoadingSpinner: =LoadingSpinner.Data
+        TemplatePadding: =0
+        TemplateSize: =80
+        Width: =1366
+        Y: =354
+        ZIndex: =1
+
+        Title2 As label:
+            Color: =RGBA(50, 49, 48, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
+            Height: =38
+            OnSelect: =Select(Parent)
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            Text: =ThisItem.Name
+            VerticalAlign: =VerticalAlign.Top
+            Width: =160
+            X: =40
+            Y: =(Parent.TemplateHeight / 2) - (Self.Height / 2)
+            ZIndex: =1
+
+        NextArrow3 As icon.ChevronRight:
+            AccessibleLabel: =Self.Tooltip
+            BorderColor: =RGBA(92, 74, 168, 1)
+            Color: =RGBA(166, 166, 166, 1)
+            DisabledBorderColor: =RGBA(166, 166, 166, 1)
+            DisabledColor: =RGBA(244, 244, 244, 1)
+            Height: =50
+            Icon: =Icon.ChevronRight
+            OnSelect: =Navigate(Appointment_details);
+            PaddingBottom: =12
+            PaddingLeft: =12
+            PaddingRight: =12
+            PaddingTop: =12
+            Tooltip: ="View item details"
+            Width: =50
+            X: =Parent.TemplateWidth - Self.Width - 12
+            Y: =(Parent.TemplateHeight / 2) - (Self.Height / 2)
+            ZIndex: =2
+
+        Rectangle34 As rectangle:
+            BorderColor: =RGBA(92, 74, 168, 1)
+            Fill: =RGBA(92, 74, 168, 1)
+            Height: =
+            OnSelect: =Select(Parent)
+            Visible: =ThisItem.IsSelected
+            Width: =4
+            ZIndex: =4
+
+        Label48 As label:
+            BorderColor: =RGBA(92, 74, 168, 1)
+            Color: =RGBA(0, 0, 0, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            OnSelect: =Select(Parent)
+            Size: =13
+            Text: =ThisItem.'Start Date and Time'
+            X: =274
+            Y: =21
+            ZIndex: =5
+
+        Label50 As label:
+            BorderColor: =RGBA(92, 74, 168, 1)
+            Color: =RGBA(0, 0, 0, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            OnSelect: =Select(Parent)
+            Size: =13
+            Text: =ThisItem.'End Date'
+            X: =474
+            Y: =15
+            ZIndex: =6
+
+        Label51 As label:
+            BorderColor: =RGBA(92, 74, 168, 1)
+            Color: =RGBA(0, 0, 0, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            OnSelect: =Select(Parent)
+            Size: =13
+            Text: =ThisItem.Subject
+            X: =692
+            Y: =25
+            ZIndex: =7
+
+        Label53 As label:
+            BorderColor: =RGBA(92, 74, 168, 1)
+            Color: =RGBA(0, 0, 0, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            OnSelect: =Select(Parent)
+            Size: =13
+            Text: =ThisItem.'Send Medical Certificate'.Value
+            X: =962
+            Y: =19
+            ZIndex: =8
+
+        Label54 As label:
+            BorderColor: =RGBA(92, 74, 168, 1)
+            Color: =RGBA(0, 0, 0, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            OnSelect: =Select(Parent)
+            Size: =13
+            Text: =ThisItem.Pharmacist.Value
+            X: =1133
+            Y: =21
+            ZIndex: =9
+
+    Icon30 As icon.Add:
+        BorderColor: =RGBA(92, 74, 168, 1)
+        Color: =RGBA(255, 255, 255, 1)
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(244, 244, 244, 1)
+        Height: =94
+        Icon: =Icon.Add
+        OnSelect: =Navigate(Appointment);
+        Width: =92
+        X: =1245
+        Y: =39
+        ZIndex: =2
+
+    TextInput3 As text:
+        BorderColor: =RGBA(202, 202, 202, 1)
+        BorderThickness: =2
+        Color: =RGBA(149, 149, 149, 1)
+        Default: =""
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        FocusedBorderThickness: =4
+        FontWeight: =FontWeight.Bold
+        Height: =86
+        HintText: ="Search"
+        HoverBorderColor: =RGBA(92, 74, 168, 1)
+        HoverColor: =RGBA(0, 0, 0, 1)
+        HoverFill: =RGBA(185, 173, 246, 1)
+        Size: =20
+        Width: =1366
+        Y: =148
+        ZIndex: =3
+
+    Icon31 As icon.Search:
+        BorderColor: =RGBA(92, 74, 168, 1)
+        Color: =RGBA(149, 149, 149, 1)
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(244, 244, 244, 1)
+        Height: =56
+        Icon: =Icon.Search
+        Width: =44
+        X: =1305
+        Y: =163
+        ZIndex: =4
+
+    Rectangle32 As rectangle:
+        BorderColor: =RGBA(92, 74, 168, 1)
+        Fill: =RGBA(0, 121, 187, 1)
+        Height: =120
+        Width: =1366
+        Y: =234
+        ZIndex: =5
+
+    Label39 As label:
+        Align: =Align.Center
+        BorderColor: =RGBA(92, 74, 168, 1)
+        Color: =RGBA(255, 255, 255, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        FontWeight: =FontWeight.Bold
+        Size: =16
+        Text: ="Name"
+        X: =26
+        Y: =274
+        ZIndex: =6
+
+    Label40 As label:
+        Align: =Align.Center
+        BorderColor: =RGBA(92, 74, 168, 1)
+        Color: =RGBA(255, 255, 255, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        FontWeight: =FontWeight.Bold
+        Height: =80
+        Size: =16
+        Text: ="Start Date and Time"
+        Width: =192
+        X: =254
+        Y: =261
+        ZIndex: =7
+
+    Label41 As label:
+        Align: =Align.Center
+        BorderColor: =RGBA(92, 74, 168, 1)
+        Color: =RGBA(255, 255, 255, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        FontWeight: =FontWeight.Bold
+        Size: =16
+        Text: ="End Date"
+        X: =472
+        Y: =274
+        ZIndex: =8
+
+    Label42 As label:
+        Align: =Align.Center
+        BorderColor: =RGBA(92, 74, 168, 1)
+        Color: =RGBA(255, 255, 255, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        FontWeight: =FontWeight.Bold
+        Size: =16
+        Text: ="Subject"
+        X: =687
+        Y: =274
+        ZIndex: =9
+
+    Label43 As label:
+        Align: =Align.Center
+        BorderColor: =RGBA(92, 74, 168, 1)
+        Color: =RGBA(255, 255, 255, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        FontWeight: =FontWeight.Bold
+        Height: =66
+        Size: =16
+        Text: ="Send medical Certificate"
+        Width: =206
+        X: =918
+        Y: =261
+        ZIndex: =10
+
+    Label44 As label:
+        Align: =Align.Center
+        BorderColor: =RGBA(92, 74, 168, 1)
+        Color: =RGBA(255, 255, 255, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        FontWeight: =FontWeight.Bold
+        Size: =16
+        Text: ="Pharmacist"
+        Width: =154
+        X: =1123
+        Y: =274
+        ZIndex: =11
+

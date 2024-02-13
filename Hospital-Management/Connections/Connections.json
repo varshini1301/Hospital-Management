@@ -1,0 +1,56 @@
+{
+  "a418e3e4-aa6f-4ec0-88d5-7e3d66636dc6": {
+    "appActions": [
+      "providers/PowerPlatform.Governance/Operations/Read",
+      "providers/PowerPlatform.Governance/Operations/Write",
+      "providers/PowerPlatform.Governance/Operations/Delete"
+    ],
+    "connectionRef": {
+      "apiTier": "Standard",
+      "displayName": "SharePoint",
+      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1674/1.0.1674.3602/sharepointonline/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_sharepointonline",
+      "parameterHints": {},
+      "parameterHintsV2": {}
+    },
+    "datasets": {
+      "https://062rs.sharepoint.com/sites/HospitalManagement": {
+        "dataSources": {
+          "Appointment details": {
+            "tableName": "6e8988d5-74c7-4ffc-9605-2c3ccfb18acc"
+          },
+          "Book Appointment": {
+            "tableName": "64f97bc5-7faa-496b-9609-50f4ea158df9"
+          },
+          "Doctor Login": {
+            "tableName": "125ac6f5-5aab-470a-97c1-1bfdd7282637"
+          },
+          "Doctor Register": {
+            "tableName": "61bf1bbb-2eb4-439b-ba0c-4264adaf258d"
+          },
+          "Login": {
+            "tableName": "125ac6f5-5aab-470a-97c1-1bfdd7282637"
+          },
+          "Medicine": {
+            "tableName": "404b8f6e-999c-46c3-bb23-0c54162466c2"
+          },
+          "Patient Register": {
+            "tableName": "732b2589-4fd5-4507-b96e-e93c8cfa1931"
+          }
+        }
+      }
+    },
+    "dataSources": [
+      "Doctor Register",
+      "Patient Register",
+      "Doctor Login",
+      "Login",
+      "Book Appointment",
+      "Appointment details",
+      "Medicine"
+    ],
+    "dependencies": {},
+    "dependents": [],
+    "id": "a418e3e4-aa6f-4ec0-88d5-7e3d66636dc6"
+  }
+}

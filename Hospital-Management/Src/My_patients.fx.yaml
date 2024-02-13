@@ -1,0 +1,264 @@
+My_patients As screen:
+    Fill: =RGBA(242, 239, 223, 1)
+    LoadingSpinnerColor: =RGBA(30, 14, 91, 1)
+
+    Container13 As groupContainer.manualLayoutContainer:
+        DropShadow: =DropShadow.Light
+        Height: =156
+        RadiusBottomLeft: =4
+        RadiusBottomRight: =4
+        RadiusTopLeft: =4
+        RadiusTopRight: =4
+        Width: =1366
+        ZIndex: =1
+
+        Rectangle24 As rectangle:
+            BorderColor: =RGBA(92, 74, 168, 1)
+            Fill: =RGBA(30, 14, 91, 1)
+            Height: =156
+            Width: =1366
+            ZIndex: =1
+
+        Label25 As label:
+            Align: =Align.Center
+            BorderColor: =RGBA(92, 74, 168, 1)
+            Color: =RGBA(255, 255, 255, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            FontWeight: =FontWeight.Bold
+            Height: =76
+            Size: =38
+            Text: ="My Patients"
+            Width: =380
+            X: =493
+            Y: =40
+            ZIndex: =2
+
+        Icon19 As icon.BackArrow:
+            BorderColor: =RGBA(92, 74, 168, 1)
+            Color: =RGBA(255, 255, 255, 1)
+            DisabledBorderColor: =RGBA(166, 166, 166, 1)
+            DisabledColor: =RGBA(244, 244, 244, 1)
+            Height: =100
+            Icon: =Icon.BackArrow
+            OnSelect: =Navigate(Doctor_menu);
+            Width: =98
+            X: =34
+            Y: =28
+            ZIndex: =3
+
+    TextInput2 As text:
+        BorderColor: =RGBA(202, 202, 202, 1)
+        BorderThickness: =3
+        Color: =RGBA(0, 0, 0, 1)
+        Default: =""
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        FocusedBorderThickness: =4
+        FontWeight: =FontWeight.Semibold
+        Height: =80
+        HintText: ="Search"
+        HoverBorderColor: =RGBA(92, 74, 168, 1)
+        HoverColor: =RGBA(0, 0, 0, 1)
+        HoverFill: =RGBA(185, 173, 246, 1)
+        Size: =20
+        Width: =1366
+        Y: =156
+        ZIndex: =2
+
+    Icon20 As icon.Search:
+        BorderColor: =RGBA(92, 74, 168, 1)
+        Color: =RGBA(149, 149, 149, 1)
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(244, 244, 244, 1)
+        Height: =46
+        Icon: =Icon.Search
+        Width: =48
+        X: =1305
+        Y: =174
+        ZIndex: =3
+
+    Rectangle25 As rectangle:
+        BorderColor: =RGBA(92, 74, 168, 1)
+        Fill: =RGBA(39, 113, 194, 1)
+        Height: =112
+        Width: =1366
+        Y: =236
+        ZIndex: =4
+
+    Label19_1 As label:
+        BorderColor: =RGBA(92, 74, 168, 1)
+        Color: =RGBA(255, 255, 255, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        FontWeight: =FontWeight.Semibold
+        Size: =18
+        Text: ="Patient Name"
+        Width: =188
+        X: =32
+        Y: =273
+        ZIndex: =5
+
+    Label20_1 As label:
+        Align: =Align.Center
+        BorderColor: =RGBA(92, 74, 168, 1)
+        Color: =RGBA(255, 255, 255, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        FontWeight: =FontWeight.Semibold
+        Size: =18
+        Text: ="Age"
+        Width: =166
+        X: =268
+        Y: =273
+        ZIndex: =6
+
+    Label21_1 As label:
+        Align: =Align.Center
+        BorderColor: =RGBA(92, 74, 168, 1)
+        Color: =RGBA(255, 255, 255, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        FontWeight: =FontWeight.Semibold
+        Height: =89
+        Size: =18
+        Text: ="Date of Appointment"
+        Width: =232
+        X: =456
+        Y: =248
+        ZIndex: =7
+
+    Label22_1 As label:
+        Align: =Align.Center
+        BorderColor: =RGBA(92, 74, 168, 1)
+        Color: =RGBA(255, 255, 255, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        FontWeight: =FontWeight.Semibold
+        Size: =18
+        Text: ="Email Id"
+        Width: =174
+        X: =729
+        Y: =273
+        ZIndex: =8
+
+    Label23_1 As label:
+        Align: =Align.Center
+        BorderColor: =RGBA(92, 74, 168, 1)
+        Color: =RGBA(255, 255, 255, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        FontWeight: =FontWeight.Semibold
+        Size: =18
+        Text: ="Mobile Number"
+        Width: =204
+        X: =922
+        Y: =273
+        ZIndex: =9
+
+    Label24_1 As label:
+        Align: =Align.Center
+        BorderColor: =RGBA(92, 74, 168, 1)
+        Color: =RGBA(255, 255, 255, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        FontWeight: =FontWeight.Semibold
+        Size: =18
+        Text: ="Fees"
+        X: =1146
+        Y: =285
+        ZIndex: =10
+
+    "Gallery1_1 As gallery.'BrowseLayout_Vertical_OneTextVariant_ver5.0'":
+        BorderColor: =RGBA(92, 74, 168, 1)
+        DelayItemLoading: =true
+        Height: =418
+        Items: =Filter('Book Appointment',StartsWith('Patient Name',TextInput2.Text))
+        Layout: =Layout.Vertical
+        LoadingSpinner: =LoadingSpinner.Data
+        TemplatePadding: =0
+        TemplateSize: =80
+        Width: =1366
+        Y: =350
+        ZIndex: =11
+
+        NextArrow2_1 As icon.ChevronRight:
+            AccessibleLabel: =Self.Tooltip
+            BorderColor: =RGBA(92, 74, 168, 1)
+            Color: =RGBA(166, 166, 166, 1)
+            DisabledBorderColor: =RGBA(166, 166, 166, 1)
+            DisabledColor: =RGBA(244, 244, 244, 1)
+            Height: =50
+            Icon: =Icon.ChevronRight
+            OnSelect: =Navigate(Patient_details);
+            PaddingBottom: =12
+            PaddingLeft: =12
+            PaddingRight: =12
+            PaddingTop: =12
+            Tooltip: ="View item details"
+            Width: =50
+            X: =Parent.TemplateWidth - Self.Width - 12
+            Y: =(Parent.TemplateHeight / 2) - (Self.Height / 2)
+            ZIndex: =2
+
+        Label26_1 As label:
+            BorderColor: =RGBA(92, 74, 168, 1)
+            Color: =RGBA(0, 0, 0, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            OnSelect: =Select(Parent)
+            Size: =13
+            Text: =ThisItem.'Patient Name'
+            X: =36
+            Y: =15
+            ZIndex: =3
+
+        Label27_1 As label:
+            BorderColor: =RGBA(92, 74, 168, 1)
+            Color: =RGBA(0, 0, 0, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            OnSelect: =Select(Parent)
+            Size: =13
+            Text: =ThisItem.Age
+            X: =272
+            Y: =15
+            ZIndex: =4
+
+        Label28_1 As label:
+            BorderColor: =RGBA(92, 74, 168, 1)
+            Color: =RGBA(0, 0, 0, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            OnSelect: =Select(Parent)
+            Size: =13
+            Text: =ThisItem.'Date of Appointment'
+            X: =514
+            Y: =15
+            ZIndex: =5
+
+        Label29_1 As label:
+            BorderColor: =RGBA(92, 74, 168, 1)
+            Color: =RGBA(0, 0, 0, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            OnSelect: =Select(Parent)
+            Size: =13
+            Text: =ThisItem.'Email  Id'
+            X: =736
+            Y: =20
+            ZIndex: =6
+
+        Label30_1 As label:
+            BorderColor: =RGBA(92, 74, 168, 1)
+            Color: =RGBA(0, 0, 0, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            OnSelect: =Select(Parent)
+            Size: =13
+            Text: =ThisItem.'Mobile Number'
+            X: =926
+            Y: =15
+            ZIndex: =7
+
+        Label32_1 As label:
+            BorderColor: =RGBA(92, 74, 168, 1)
+            Color: =RGBA(0, 0, 0, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            OnSelect: =Select(Parent)
+            Size: =13
+            Text: =ThisItem.Fees.Value
+            Width: =162
+            X: =1142
+            Y: =20
+            ZIndex: =8
+
