@@ -7738,7 +7738,7 @@
       "MetaDataIDKey": "",
       "Name": "Medicine_Column1",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 0,
+      "ParentIndex": 1,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -8457,7 +8457,7 @@
       "MetaDataIDKey": "",
       "Name": "Quantity_Column1",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 1,
+      "ParentIndex": 0,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {

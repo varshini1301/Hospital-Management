@@ -18,8 +18,8 @@ Patient_login As screen:
         Size: =15
         Text: =""
         Width: =582
-        X: =444
-        Y: =315
+        X: =740
+        Y: =301
         ZIndex: =1
 
     Container7 As groupContainer.manualLayoutContainer:
@@ -77,8 +77,8 @@ Patient_login As screen:
         Size: =22
         Text: ="Patient Login"
         Width: =290
-        X: =567
-        Y: =195
+        X: =886
+        Y: =190
         ZIndex: =3
 
     Patient_Log As form:
@@ -88,8 +88,8 @@ Patient_login As screen:
         Height: =361
         NumberOfColumns: =1
         Width: =582
-        X: =444
-        Y: =315
+        X: =740
+        Y: =301
         ZIndex: =4
 
         Username_DataCard4 As typedDataCard.textualEditCard:
@@ -288,7 +288,7 @@ Patient_login As screen:
         Size: =18
         Text: ="Register"
         Width: =206
-        X: =474
+        X: =774
         Y: =561
         ZIndex: =5
 
@@ -305,7 +305,18 @@ Patient_login As screen:
         Size: =18
         Text: ="Login"
         Width: =200
-        X: =798
+        X: =1096
         Y: =561
         ZIndex: =6
+
+    Image4 As image:
+        BorderColor: =RGBA(92, 74, 168, 1)
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Height: =618
+        Image: =Patient
+        ImagePosition: =ImagePosition.Stretch
+        Width: =702
+        Y: =150
+        ZIndex: =7
 
